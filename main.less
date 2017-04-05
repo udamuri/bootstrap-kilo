@@ -29,6 +29,12 @@
 @info_color:    #5bc0de;
 @warning_color: #f0ad4e;
 
+@fb: #4867AA;
+@twit: #1DA1F2;
+@git: #000000;
+@linked: #0177B5;
+@tube: #d9534f;
+
 @main-darker:  lighten(@main_color, 5.5%);
 @danger-darker:  lighten(@danger_color, 13.5%);
 @primary-darker:  lighten(@primary_color, 13.5%);
@@ -49,7 +55,9 @@ h1,h2,h3,h4,h5,h6
 body {
     padding-top: 72px;
     font-size: 12px;
-    background-color:@body; 
+    background-color:@body;
+    font-family:Raleway,Helvetica,Arial,sans-serif;
+    font-size:14px;
 }
 
 .header
@@ -76,6 +84,11 @@ body {
     min-height: 300px;
 }
 
+#mycarouselx {
+
+
+}
+
 #footer
 {
     h1,h2,h3,h4,h5,h6
@@ -87,7 +100,7 @@ body {
     }
     background: @main_color;
     color: @white_color;
-    min-height: 200px;
+    min-height: 100px;
     padding: 20px 0 10px 0;
     .footer-head
     {
@@ -96,8 +109,61 @@ body {
 
     .footer-content
     {
-        padding-top:10px;
+        padding-top:20px;
+        padding-bottom:20px;
         border-top: 1px solid @main-darker;
+
+        a>i.me-fb
+        {
+            color: @fb;
+            background-color:@white_color; 
+            font-size: 30px;
+        }
+
+        a>i.me-twit
+        {
+            color: @twit;
+            background-color:@white_color; 
+            font-size: 30px;
+        }
+
+        a>i.me-git
+        {
+            color: @git;
+            background-color:@white_color; 
+            font-size: 30px;
+        }
+
+        a>i.me-linked
+        {
+            color: @linked;
+            background-color:@white_color; 
+            font-size: 30px;
+        }
+
+        a>i.me-tube
+        {
+            color: @tube;
+            background-color:@white_color; 
+            font-size: 30px;
+        }
+
+        a>i.me-insta
+        {
+            color: @white_color;
+            background: linear-gradient( #400080, transparent), 
+                        linear-gradient( 200deg, #d047d1, #ff0000,    #ffff00);
+            font-size: 30px;
+        }
+
+        ul li a 
+        {
+            text-decoration: none;
+            color: @white_color;
+            &:hover {
+                color: @white_color1;  
+            }
+        }
     }
 
     .footer-text
