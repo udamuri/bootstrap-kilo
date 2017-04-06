@@ -77,16 +77,17 @@ body {
     background-image: url(img/header.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%; 
-    height: 350px;
+    // background-size: 100%; 
+    background-size: cover !important;
+    min-height: 400px;
     @media @min768max992
     {
-       height: 300px; 
+       min-height: 300px; 
     }
 
     @media @midi 
     {
-        height: 200px;
+        min-height: 200px;
     }
 }
 
