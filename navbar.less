@@ -1,8 +1,9 @@
 @bgDefault      : #ffffff;
 @bgHighlight    : #ffffff;
 @colDefault     : #000000;
-// @colHighlight   : #990066;
 @colHighlight   : #005128;
+// @colHighlight        : #990066;
+@colLogo        : #ff0000;
 @dropDown       : false;
 .ddm() when (@dropDown) {
   > li > .dropdown-menu {
@@ -23,8 +24,9 @@
   background-color: @bgDefault;
   border-color: @bgHighlight;
   .navbar-brand {
-    color: @colHighlight;
+    color: @colLogo;
     margin-top:10px;
+    font-weight: bold;
     &:hover, &:focus {
       color: @colHighlight; }}
   .navbar-text {
